@@ -1,0 +1,87 @@
+{
+    "type": "form",
+    "display": "form",
+    "components": [
+        {
+            "label": "First Name",
+            "placeholder": "Enter First Name",
+            "tableView": true,
+            "validate": {
+              "required": true
+            },
+            "key": "firstName",
+            "type": "textfield",
+            "input": true
+          },
+          {
+            "label": "Last Name",
+            "placeholder": "Enter Last Name",
+            "tableView": true,
+            "validate": {
+              "required": true
+            },
+            "key": "lastName",
+            "type": "textfield",
+            "input": true
+          },
+          {
+            "label": "Gender",
+            "optionsLabelPosition": "right",
+            "inline": true,
+            "tableView": false,
+            "values": [
+              {
+                "label": "Male",
+                "value": "Male",
+                "shortcut": ""
+              },
+              {
+                "label": "Female",
+                "value": "female",
+                "shortcut": ""
+              }
+            ],
+            "key": "gender",
+            "type": "radio",
+            "input": true
+          },
+          {
+        "type": "email",
+        "placeholder": "Enter your email address",
+        "key": "email",
+        "label": "Email",
+        "inputType": "email",
+        "input": true,
+        "validate": {
+          "required": true
+        }
+      },
+      {
+        "label": "Password",
+        "placeholder": "Enter Password",
+        "tableView": false,
+        "case": "mixed",
+        "validate": {
+          "required": true,
+          "minLength": 8,
+          "customMessage": "Password should be with min of 8 characters"
+        },
+        "errorLabel": "Password Invalid",
+        "key": "password",
+        "type": "password",
+        "input": true,
+        "protected": true
+      },
+      {
+        "type": "button",
+        "theme": "primary",
+        "disableOnInvalid": true,
+        "action": "submit",
+        "size": "md",
+        "key": "submit",
+        "label": "Submit",
+        "input": true,
+        "block": true
+      }
+    ]
+  }

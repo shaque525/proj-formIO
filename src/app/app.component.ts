@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
+
+import sampleData from './form.json';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'proj-formIO';
+  submittedData: any;
+
+  customForm = sampleData;
+
+  onSubmit(event: any) {
+    this.submittedData = event;
+  }
 }
